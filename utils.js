@@ -70,3 +70,14 @@ function toXY({ dir, mag }) {
   }
 }
 
+/**
+ *    Magnitude
+ * ---------------
+ *   @description used by toPolar function
+ *
+ * @param {object} cartesianCordinates this are the x and y co-ordinates
+ * @returns {number} the distance between point (x,y) and (0,0) orgin
+ */
+function magnitude({ x, y }) {
+  return Math.hypot(x, y)
+}
