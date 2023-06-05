@@ -31,3 +31,22 @@ function getPixelMatrix(imageData) {
   }
   return mat
 }
+
+/**
+ * **polarization function**
+ * ---------------------------
+ * @description converts cartesian co-ordinates x and y to polar co-ordinates (direction , magnitude)
+ * @example const value = toPolar(12,4)
+ * const dir = value.dir
+ * const mag = value.mag
+ *
+ * @param {object} cartesianCordinates this a object with x and y co-ordinates
+ * @returns {object} polarCordinates of dir and mag
+ */
+function toPolar({ x, y }) {
+  return {
+    dir: direction({ x, y }),
+    mag: magnitude({ x, y }),
+  }
+}
+
