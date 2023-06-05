@@ -93,3 +93,20 @@ function direction({ x, y }) {
   return Math.atan2(y, x)
 }
 
+/**
+ *  Function of adding two vector points values
+ * --------------------------------------------
+ * @description does the summation of two vectors
+ * @param {{
+ * x:number,
+ * y:number
+ * }} p1 a vector point
+ * @param {{x:number, y:number}} p2 a vector point
+ * @returns a new vector
+ */
+function addPoints(p1, p2) {
+  return {
+    x: p1.x + p2.x,
+    y: p1.y + p2.y,
+  }
+}
