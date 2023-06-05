@@ -50,3 +50,23 @@ function toPolar({ x, y }) {
   }
 }
 
+/**
+ *  ** unpolarization function **
+ * ----------------------------------------------------------------------------
+ * @description This function converts direction and magnitude as a representation of vector
+ * to cartesian co-ordinates x and y.
+ * This is the reverse of toPolar
+ * for more got to https://en.wikipedia.org/wiki/Polar_coordinate_system
+ *
+ *
+ * @param {object} polarCordinates of dir and mag This is the angle between point (x,y) relative to (0,0)
+ * This is the distance between point (x,y) relative to (0,0)
+ * @returns {object} cartesian co-ordinate x and y
+ */
+function toXY({ dir, mag }) {
+  return {
+    x: Math.cos(dir) * mag,
+    y: Math.sin(dir) * mag,
+  }
+}
+
