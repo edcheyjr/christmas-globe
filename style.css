@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  /* gap: 50px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  /* background: blueviolet; */
+  height: 245px;
+  width: auto;
+  margin-top: 332px;
+  margin-left: 26px;
+}
+video {
+  height: 50%;
+  width: auto;
+  background: red;
+  display: none;
+}
+
+#canvasContainer {
+  background: url('assets/image2.jpg');
+  width: 420px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
