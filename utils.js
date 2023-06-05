@@ -110,3 +110,20 @@ function addPoints(p1, p2) {
     y: p1.y + p2.y,
   }
 }
+/**
+ *  Function of subracting two vector points values
+ * --------------------------------------------
+ * @description does the subraction of two vectors
+ * @param {{
+ * x:number,
+ * y:number
+ * }} p1 a vector point
+ * @param {{x:number, y:number}} p2 a vector point
+ * @returns a new vector
+ */
+function subractPoints(p1, p2) {
+  return {
+    x: p1.x - p2.x,
+    y: p1.y - p2.y,
+  }
+}
