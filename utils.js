@@ -81,3 +81,15 @@ function toXY({ dir, mag }) {
 function magnitude({ x, y }) {
   return Math.hypot(x, y)
 }
+/**
+ *    Direction
+ * ---------------
+ *  @description used by toPolar to convert cartesian co-ordinates to an angle between the points x,y and 0,0
+ *
+ * @param {object} cartesianCordinates this are the x and y co-ordinates
+ * @returns {number} the angle between point (x,y) and (0,0) orgin
+ */
+function direction({ x, y }) {
+  return Math.atan2(y, x)
+}
+
